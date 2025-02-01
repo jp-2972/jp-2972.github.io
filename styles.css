@@ -1,0 +1,31 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 0;
+    height: 100vh;
+}
+
+.card {
+    background-color: lightgrey;
+    width: 550px;
+    border: 15px solid #0f3c69;
+    padding: 20px;
+    margin: 20px;
+    color: #0f3c69;
+    box-shadow: 10px 5px 40px 5px rgba(0, 0, 0, 0.7);
+}
+
+.section {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+.section:last-child {
+    border-bottom: none;
+}
+
+.heading {
+    text-align: center;
+}
