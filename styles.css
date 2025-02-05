@@ -5,10 +5,11 @@ body {
     display: flex;
     margin: 0;
     height: 100vh;
+    background-color: #faf0ca;
 }
 
 .card {
-    background-color: lightgrey;
+    background-color: #f4d35e;
     width: 550px;
     border: 15px solid #0f3c69;
     padding: 20px;
