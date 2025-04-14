@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tip Calculator - Lab 5</title>
+  <link rel="stylesheet" href="cal.css" />
+</head>
+<body>
+  <main>
+    <h1 style="font-family: Arial, sans-serif">Tip Calculator</h1>
+    
+    <p style="color: #0f3c69; "><b>Currency conversion:</b></p>
+    <p style="color: #0f3c69">$1 USD = €0.95 EUR for EUROS</p>
+    <p style="color: #0f3c69">$1 USD = ₹85 INR for Rupees</p>
+
+    <form id="tipForm">
+      <div>
+        <label for="billTotal">Bill Total ($):</label>
+        <input type="number" id="billTotal" name="billTotal" min="0" step="0.01" required />
+      </div>
+
+      <div>
+        <label for="taxTotal">Total Bill with Tax (11%):</label>
+        <input type="text" id="taxTotal" disabled />
+      </div>
+
+      <div>
+        <label for="currency">Currency:</label>
+        <select id="currency">
+          <option value="">Select Currency</option>
+          <option value="">$ US Dollars</option>
+          <option value="INR">₹ Indian Rupee</option>
+          <option value="EUR">€ Euro</option>
+        </select>
+      </div>
+
+      <div class="slider-container">
+        <label for="tipSlider">Tip:</label>
+        <input type="range" id="tipSlider" name="tipSlider" min="0" max="100" value="15" />
+        <span id="tipValue">15%</span>
+      </div>
+      
+
+      <div>
+        <label for="convertedTip">Converted Tip Amount:</label>
+        <input type="text" id="convertedTip" disabled />
+      </div>
+
+      <div>
+        <label for="convertedTotal">Converted Total Bill with Tip and Tax:</label>
+        <input type="text" id="convertedTotal" disabled />
+      </div>
+
+      </form>
+  </main>
+
+  <script src="cal.js"></script>
+</body>
+</html>
