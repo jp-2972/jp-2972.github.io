@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tip Calculator - Lab 5</title>
-  <link rel="stylesheet" href="cal.css" />
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator - Lab 5</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barriecito&family=Delius+Swash+Caps&display=swap" rel="stylesheet">
+  
+    <link rel="stylesheet" href="cal.css" />
+  </head>
+  
+  
 <body>
   <main>
-    <h1 style="font-family: Arial, sans-serif">Tip Calculator</h1>
+    <h1 style="font-family: 'Barriecito', cursive;">Tip Calculator</h1>
     
     <p style="color: #0f3c69; "><b>Currency conversion:</b></p>
     <p style="color: #0f3c69">$1 USD = €0.95 EUR for EUROS</p>
@@ -47,10 +53,10 @@
         <input type="text" id="convertedTip" disabled />
       </div>
 
-      <div>
+      <div class="inline-field">
         <label for="convertedTotal">Converted Total Bill with Tip and Tax:</label>
         <input type="text" id="convertedTotal" disabled />
-      </div>
+      </div>      
 
       </form>
   </main>

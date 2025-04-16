@@ -1,20 +1,27 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Delius Swash Caps', cursive;
   background: linear-gradient(to right, #eef2f3, #faf0ca);
   margin: 0;
   padding: 2rem;
   display: flex;
   justify-content: center;
+}
+
+  
+  main {
+    background: 
+      linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), 
+      url('tip.png') no-repeat center bottom;
+    background-size: 100%;
+    background-blend-mode: lighten;
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   }
   
-main {
-  background-color: #ccc;
-  padding: 2rem;
-  border-radius: 10px;
-  max-width: 550px;
-  width: 100%;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-}
+  
   
 h1 {
   text-align: center;
@@ -35,12 +42,14 @@ label {
 input[type="text"],
 input[type="number"],
 select {
+  font-family: 'Delius Swash Caps', cursive;
   padding: 0.5rem;
   font-size: 1rem;
   color: #0f3c69;
   border: 1px solid #0f3c69;
   border-radius: 5px;
 }
+
   
 input[type="range"] {
   width: 100%;
@@ -104,5 +113,25 @@ input[type=number] {
     font-size: 0.9rem;
   }
 }
+
+.inline-field {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.inline-field label {
+  font-weight: bold;
+  color: #0f3c69;
+  min-width: 230px;
+  white-space: nowrap;
+}
+
+.inline-field input {
+  flex: 1;
+  min-width: 150px;
+}
+
 
   
