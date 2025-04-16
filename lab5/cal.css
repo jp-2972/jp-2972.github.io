@@ -55,9 +55,23 @@ input:disabled {
 .slider-container {
   display: flex;
   align-items: center;
-  width: 400px;
+  flex-wrap: wrap;
   gap: 10px;
+  width: 100%;
 }
+
+.slider-container input[type="range"] {
+  flex: 1;
+  min-width: 0;
+}
+
+#tipValue {
+  font-weight: bold;
+  color: #0f3c69;
+  min-width: 40px;
+  white-space: nowrap;
+}
+
   
 #tipValue {
   font-weight: bold;
