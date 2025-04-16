@@ -55,8 +55,9 @@ input:disabled {
 .slider-container {
   display: flex;
   align-items: center;
-  width: 400px;
   gap: 10px;
+  width: 100%;
+  flex-wrap: wrap
 }
   
 #tipValue {
