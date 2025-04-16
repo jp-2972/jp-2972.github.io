@@ -55,7 +55,7 @@ input:disabled {
 .slider-container {
   display: flex;
   align-items: center;
-  width: 380px;
+  width: 400px;
   gap: 10px;
 }
   
