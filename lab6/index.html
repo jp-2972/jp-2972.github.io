@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sunrise and Sunset Dashboard</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Baumans&display=swap" rel="stylesheet">
+        <script src="script.js" defer></script>
+    </head>
+    
+<body>
+    <!-- Hero Section -->
+    <header id="hero">
+        <div class="overlay">
+            <img src="sunrise.svg" alt="Sunrise and Sunset Dashboard Logo" id="logo">
+            <h1>Welcome to JP's SunriseSunset</h1>
+            <p>The tool to find <strong>sunrise</strong> and <strong>sunset</strong> times in your city.</p>
+            <div class="search-box">
+                <select id="city">
+                    <option value="Select">Select-the-city</option>
+                    <option value="New York, USA" data-lat="40.7128" data-lon="-74.0060">New York, United States</option>
+                    <option value="Delhi, India" data-lat="28.6139" data-lon="77.2090">Delhi, India</option>
+                    <option value="Mumbai, India" data-lat="19.0760" data-lon="72.8777">Mumbai, India</option>
+                    <option value="California, USA" data-lat="36.7783" data-lon="-119.4179">California, United States</option>
+                    <option value="Ohio, USA" data-lat="40.4173" data-lon="-82.9071">Ohio, United States</option>
+                    <option value="Cincinnati, USA" data-lat="39.1031" data-lon="-84.5120">Cincinnati, United States</option>
+                    <option value="Raleigh, USA" data-lat="35.7796" data-lon="-78.6382">Raleigh, United States</option>
+                    <option value="Austin, USA" data-lat="30.2672" data-lon="-97.7431">Austin, United States</option>
+                    <option value="Ahmedabad, India" data-lat="23.0225" data-lon="72.5714">Ahmedabad, India</option>
+                    <option value="Kolkata, India" data-lat="22.5726" data-lon="88.3639">Kolkata, India</option>
+                    <option value="Florida, USA" data-lat="27.9944" data-lon="-81.7603">Florida, United States</option>
+                </select>
+                <button id="cur-loc">Find My Location</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Display Section -->
+    <main>
+        <section id="display">
+            <h2>Today's Information</h2>
+            <div class="card" id="today">
+                <ul>
+                    <li><strong>Sunrise:</strong> <span id="sunrise"></span></li>
+                    <li><strong>Sunset:</strong> <span id="sunset"></span></li>
+                    <li><strong>Dawn:</strong> <span id="dawn"></span></li>
+                    <li><strong>Dusk:</strong> <span id="dusk"></span></li>
+                    <li><strong>Solar Noon:</strong> <span id="solar-noon"></span></li>
+                    <li><strong>Day Length:</strong> <span id="dl"></span></li>
+                    <li><strong>Timezone:</strong> <span id="time"></span></li>
+                </ul>
+            </div>
+
+            <h2>Tomorrow's Information</h2>
+            <div class="card" id="tomorrow">
+                <ul>
+                    <li><strong>Sunrise:</strong> <span id="tom_sunrise"></span></li>
+                    <li><strong>Sunset:</strong> <span id="tom_sunset"></span></li>
+                    <li><strong>Dawn:</strong> <span id="tom_dawn"></span></li>
+                    <li><strong>Dusk:</strong> <span id="tom_dusk"></span></li>
+                    <li><strong>Solar Noon:</strong> <span id="tom_solar-noon"></span></li>
+                    <li><strong>Day Length:</strong> <span id="tom_dl"></span></li>
+                    <li><strong>Timezone:</strong> <span id="tom_time"></span></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <p>API data provided by <a href="https://sunrisesunset.io" target="_blank">SunriseSunset.io</a></p>
+    </footer>
+</body>
+</html>
